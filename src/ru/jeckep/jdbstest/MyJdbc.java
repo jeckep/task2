@@ -57,9 +57,9 @@ public class MyJdbc {
 			try {
 				conn.setAutoCommit(false);
 				stmt2 = conn.createStatement();
-				stmt2.addBatch("INSERT INTO BankClients values ('Ivan Ivanov',2)");
-				stmt2.addBatch("INSERT INTO BankAccounts values (76456,'Ivan Ivanov',1000)");
-				stmt2.addBatch("INSERT INTO BankAccounts values (76488,'Ivan Ivanov',2000)");
+				stmt2.addBatch("INSERT INTO BankClients values ('Ivan Ivanoff',2)");
+				stmt2.addBatch("INSERT INTO BankAccounts values (76456,'Ivan Ivanoff',1000)");
+				stmt2.addBatch("INSERT INTO BankAccounts values (76488,'Ivan Ivanoff',2000)");
 				stmt2.executeBatch();
 				conn.commit();
 				System.out.println("Client was succesfully added and accounts were created.");
